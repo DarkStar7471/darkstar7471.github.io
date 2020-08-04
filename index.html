@@ -1,18 +1,30 @@
----
-layout: default
----
+#_layouts/default.html
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+</head>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<body>
+    {{ content}}
+    <div class="posts">
+        {% for post in site.posts %}
+        <article class="post">
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+            <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+            <div class="entry">
+                {{ post.excerpt }}
+            </div>
+
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        </article>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
