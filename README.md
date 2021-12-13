@@ -9,6 +9,7 @@ npm start
 
 ### TODO
 
+- Fix NavBar with active highlighting and shift back to component-based setup
 - Add citations/attributes
 - Add blog section
 - Remove bloat pages from template
