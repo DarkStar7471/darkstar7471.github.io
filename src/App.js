@@ -8,11 +8,13 @@ import Blog from "./Blog";
 import Resources from "./Resources";
 import About from "./About";
 import Footer from "./Footer";
+import NavBar from "./NavBar";
 
 function App() {
   return (
     <Fragment>
       <Router>
+        <NavBar />
         <Routes>
           <Route
             exact
@@ -38,8 +40,8 @@ function App() {
             element={<About />}
           ></Route>
         </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </Fragment>
   );
 }
