@@ -11,8 +11,7 @@ export default class Resources extends Component {
               <div class="row">
                 <div class="col-xl-6">
                   <Header />
-
-                  <p class="mt-5 text-grey text-spacey">
+                  <p class="mt-5 text-grey text-spacey text-left">
                     <ul>
                       <li>
                         <b>TryHackMe Rooms</b>
@@ -194,6 +193,7 @@ export default class Resources extends Component {
                         </li>
                       </ul>
                       <br />
+
                       <li>
                         <b>Project Repositories</b>
                         <ul>
@@ -216,12 +216,12 @@ export default class Resources extends Component {
                           </li>
                         </ul>
                       </li>
-                    </ul>
-                    <br />
+                    
+                    <br/>
                     <li>
                       <b>Off-Site Blog Posts</b>
                     </li>
-                    <ul>
+                      <ul>
                       <li>
                         <a
                           href="https://blog.tryhackme.com/making-the-mountain/"
@@ -231,12 +231,13 @@ export default class Resources extends Component {
                         </a>{" "}
                         - TryHackMe Official Blog
                       </li>
-                    </ul>
+                      </ul>
+                    
                     <br />
                     <li>
                       <b>Talk Videos</b>
                     </li>
-                    <ul>
+                      <ul>
                       <li>
                         <a href="https://youtu.be/4DY4TXhmpGo" target="_blank">
                           <i>Making the Mountain; Creating Quality Boxes</i>
@@ -264,8 +265,10 @@ export default class Resources extends Component {
                           SECARMY SARCON 2020
                         </a>
                       </li>
+                      </ul>
                     </ul>
-                    <br />
+                    
+                    <ul>
                     <li>
                       <b>Presentation Slides</b>
                       <ul>
@@ -287,6 +290,7 @@ export default class Resources extends Component {
                         </li>
                       </ul>
                     </li>
+                    </ul>
                     <br />
                   </p>
                 </div>
