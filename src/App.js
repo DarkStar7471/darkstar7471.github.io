@@ -40,8 +40,8 @@ function App() {
             element={<About />}
           ></Route>
         </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </Fragment>
   );
 }

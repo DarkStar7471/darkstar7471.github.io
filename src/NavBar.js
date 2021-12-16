@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import react from "react";
+import { Link } from "react-router-dom";
 
 export default class NavBar extends Component {
   constructor(props) {
@@ -11,11 +11,11 @@ export default class NavBar extends Component {
   }
   render() {
     return (
-      <div class="navbar-dark text-white">
-        <div class="container">
-          <nav class="navbar px-0 navbar-expand-lg navbar-dark">
+      <div className="navbar-dark text-white">
+        <div className="container">
+          <nav className="navbar px-0 navbar-expand-lg navbar-dark">
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-toggle="collapse"
               data-target="#navbarNavAltMarkup"
@@ -23,25 +23,25 @@ export default class NavBar extends Component {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a href="/" class="p-3 text-decoration-none text-light">
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div className="navbar-nav">
+                <Link to="/" className="p-3 text-decoration-none text-light">
                   <div id="home">home</div>
-                </a>
-                <a href="/blog" class="p-3 text-decoration-none text-light">
+                </Link>
+                <Link to="/blog" className="p-3 text-decoration-none text-light">
                   <div id="blog">blog</div>
-                </a>
-                <a
-                  href="/resources"
+                </Link>
+                <Link
+                  to="/resources"
                   class="p-3 text-decoration-none text-light"
                 >
                   <div id="resources">resources</div>
-                </a>
-                <a href="/about" class="p-3 text-decoration-none text-light">
+                </Link>
+                <Link to="/about" className="p-3 text-decoration-none text-light">
                   <div id="about">about</div>
-                </a>
+                </Link>
               </div>
             </div>
           </nav>
